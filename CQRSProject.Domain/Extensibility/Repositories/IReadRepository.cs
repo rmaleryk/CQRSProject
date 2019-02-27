@@ -1,7 +1,6 @@
-﻿namespace CQRSProject.Domain.Extensibility.Repositories
+﻿namespace CQRSProject.Core.Extensibility.Repositories
 {
     public interface IReadRepository<T>
     {
-        T[] GetAll();
     }
 }

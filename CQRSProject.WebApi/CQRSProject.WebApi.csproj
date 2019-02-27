@@ -13,6 +13,7 @@
     <ProjectReference Include="..\CQRSProject.Commands\CQRSProject.Commands.csproj" />
     <ProjectReference Include="..\CQRSProject.DataAccess.Read\CQRSProject.DataAccess.Read.csproj" />
     <ProjectReference Include="..\CQRSProject.DataAccess.Write\CQRSProject.DataAccess.Write.csproj" />
+    <ProjectReference Include="..\CQRSProject.Infrastructure.EventStore\CQRSProject.Infrastructure.EventStore.csproj" />
     <ProjectReference Include="..\CQRSProject.Queries\CQRSProject.Queries.csproj" />
   </ItemGroup>
 

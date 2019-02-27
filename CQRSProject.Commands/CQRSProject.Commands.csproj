@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CQRSProject.Domain\CQRSProject.Domain.csproj" />
+    <ProjectReference Include="..\CQRSProject.Domain\CQRSProject.Core.csproj" />
   </ItemGroup>
 
 </Project>

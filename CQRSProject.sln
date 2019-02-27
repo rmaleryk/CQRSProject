@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.WebApi", "CQRSProject\CQRSProject.WebApi.csproj", "{31F9B811-8388-4374-9A99-5F51EE42A505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.WebApi", "CQRSProject.WebApi\CQRSProject.WebApi.csproj", "{31F9B811-8388-4374-9A99-5F51EE42A505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.Commands", "CQRSProject.Commands\CQRSProject.Commands.csproj", "{1612924B-E310-43E5-9D83-A24AF2C6CF56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.Commands", "CQRSProject.Commands\CQRSProject.Commands.csproj", "{1612924B-E310-43E5-9D83-A24AF2C6CF56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.Queries", "CQRSProject.Queries\CQRSProject.Queries.csproj", "{7AE812B4-6962-45C6-B2B8-7E549C385B61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.Queries", "CQRSProject.Queries\CQRSProject.Queries.csproj", "{7AE812B4-6962-45C6-B2B8-7E549C385B61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.Domain", "CQRSProject.Domain\CQRSProject.Domain.csproj", "{A8D8D70C-7023-45C8-BBDA-4F86E7E0ECA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.Core", "CQRSProject.Domain\CQRSProject.Core.csproj", "{A8D8D70C-7023-45C8-BBDA-4F86E7E0ECA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.DataAccess.Write", "CQRSProject.DataAccess.Write\CQRSProject.DataAccess.Write.csproj", "{0C89E8E1-ADDF-452C-AB04-81AEC043F86B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.DataAccess.Write", "CQRSProject.DataAccess.Write\CQRSProject.DataAccess.Write.csproj", "{0C89E8E1-ADDF-452C-AB04-81AEC043F86B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.DataAccess.Read", "CQRSProject.DataAccess.Read\CQRSProject.DataAccess.Read.csproj", "{CB12368C-BA10-4A69-8649-7AEA4089F5AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSProject.DataAccess.Read", "CQRSProject.DataAccess.Read\CQRSProject.DataAccess.Read.csproj", "{CB12368C-BA10-4A69-8649-7AEA4089F5AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSProject.Infrastructure.EventStore", "CQRSProject.Infrastructure.EventStore\CQRSProject.Infrastructure.EventStore.csproj", "{44AA5EF0-E40A-474A-A7C1-37D98E711AF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CB12368C-BA10-4A69-8649-7AEA4089F5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB12368C-BA10-4A69-8649-7AEA4089F5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB12368C-BA10-4A69-8649-7AEA4089F5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AA5EF0-E40A-474A-A7C1-37D98E711AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AA5EF0-E40A-474A-A7C1-37D98E711AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AA5EF0-E40A-474A-A7C1-37D98E711AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AA5EF0-E40A-474A-A7C1-37D98E711AF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

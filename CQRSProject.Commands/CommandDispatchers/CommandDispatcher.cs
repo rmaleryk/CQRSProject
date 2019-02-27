@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CQRSProject.Commands.Extensibility;
 
 namespace CQRSProject.Commands.CommandDispatchers
@@ -12,7 +13,7 @@ namespace CQRSProject.Commands.CommandDispatchers
             this.serviceProvider = serviceProvider;
         }
 
-        public void Execute<TCommand>(TCommand command) where TCommand : ICommand
+        public async Task ExecuteAsync<TCommand>(TCommand command) where TCommand : ICommand
         {
             if (command == null)
             {
@@ -26,7 +27,7 @@ namespace CQRSProject.Commands.CommandDispatchers
                 throw new ArgumentException(nameof(TCommand));
             }
 
-            handler.Execute(command);
+            await handler.ExecuteAsync(command);
         }
     }
 }

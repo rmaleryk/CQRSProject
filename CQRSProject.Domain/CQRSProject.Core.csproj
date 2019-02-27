@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>CQRSProject.Core</AssemblyName>
+    <RootNamespace>CQRSProject.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>C:\Users\roman.maleryk\.nuget\packages\mongodb.bson\2.7.3\lib\netstandard1.5\MongoDB.Bson.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

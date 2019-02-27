@@ -1,7 +1,11 @@
-﻿namespace CQRSProject.Domain.Extensibility.Repositories
+﻿using System.Threading;
+using System.Threading.Tasks;
+using CQRSProject.Core.Entities;
+
+namespace CQRSProject.Core.Extensibility.Repositories
 {
     public interface IWriteRepository<T>
     {
-        void Save(T entity);
+        Task<UserLocation> SaveAsync(UserLocation userLocation, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

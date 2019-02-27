@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CQRSProject.Queries.Extensibility;
 
 namespace CQRSProject.Queries.QueryDispatchers
@@ -12,7 +13,7 @@ namespace CQRSProject.Queries.QueryDispatchers
             this.serviceProvider = serviceProvider;
         }
 
-        public TResult Execute<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult>
+        public async Task<TResult> ExecuteAsync<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult>
         {
             if (query == null)
             {
@@ -26,7 +27,7 @@ namespace CQRSProject.Queries.QueryDispatchers
                 throw new ArgumentException(nameof(TQuery));
             }
 
-            return handler.Execute(query);
+            return await handler.ExecuteAsync(query);
         }
     }
 }

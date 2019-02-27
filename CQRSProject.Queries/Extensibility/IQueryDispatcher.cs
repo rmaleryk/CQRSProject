@@ -1,7 +1,9 @@
-﻿namespace CQRSProject.Queries.Extensibility
+﻿using System.Threading.Tasks;
+
+namespace CQRSProject.Queries.Extensibility
 {
     public interface IQueryDispatcher
     {
-        TResult Execute<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult>;
+        Task<TResult> ExecuteAsync<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult>;
     }
 }
